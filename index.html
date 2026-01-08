@@ -1,0 +1,338 @@
+<html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budaya Daerah Unik Indonesia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #e74c3c, #f39c12); /* Merah dan oranye tropis */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #e74c3c;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 10px;
+        }
+        .culture-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #fafafa;
+        }
+        .culture-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .culture-item .content {
+            flex: 1;
+        }
+        .culture-item h3 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+        .culture-item p {
+            margin: 0 0 10px 0;
+        }
+        .rating {
+            color: #f39c12;
+            font-size: 1.2em;
+        }
+        .button {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #2ecc71;
+        }
+        .detail {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+        }
+        .detail.show {
+            display: block;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Budaya Daerah Unik Indonesia</h1>
+        <p>Selamat Datang di Budaya Daerah Unik Indonesia</p>
+        <p>Website ini menyajikan koleksi budaya khas dari berbagai daerah di Indonesia. Temukan informasi autentik, sejarah, dan rating dari pengguna lainnya. Mulai jelajahi dengan masuk ke profil Anda!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#jawa">Jawa</a></li>
+            <li><a href="#bali">Bali</a></li>
+            <li><a href="#sumatra">Sumatra</a></li>
+            <li><a href="#kalimantan">Kalimantan</a></li>
+            <li><a href="#sulawesi">Sulawesi</a></li>
+            <li><a href="#papua">Papua</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="section" id="jawa">
+            <h2>Budaya Khas Jawa</h2>
+            <div class="culture-item">
+                <img src="https://via.placeholder.com/150x150?text=Tari+Kecak+Jawa" alt="Tari Kecak Jawa">
+                <div class="content">
+                    <h3>Tari Kecak</h3>
+                    <p>Tarian tradisional Jawa yang melibatkan gerakan dinamis dan vokal "cak" ritmis, menceritakan kisah epik.</p>
+                    <div class="rating">★★★★☆ (4.5 dari 10 ulasan)</div>
+                    <a href="#" class="button" onclick="showDetail('detail-kecak')">Lihat Detail</a>
+                </div>
+            </div>
+            <div id="detail-kecak" class="detail">
+                <h4>Sejarah dan Deskripsi</h4>
+                <p>Tari Kecak berasal dari Bali tapi populer di Jawa. Melibatkan kelompok penari duduk melingkar, gerakan tangan, dan nyanyian "cak".</p>
+                <p><strong>Asal:</strong> Jawa Timur, dipengaruhi budaya Hindu.</p>
+            </div>
+            <div class="culture-item">
+                <img src="https://via.placeholder.com/150x150?text=Wayang+Kulit+Jawa" alt="Wayang Kulit Jawa">
+                <div class="content">
+                    <h3>Wayang Kulit</h3>
+                    <p>Pertunjukan boneka kulit yang menceritakan kisah Ramayana dan Mahabharata dengan dalang.</p>
+                    <div class="rating">★★★★★ (5.0 dari 15 ulasan)</div>
+                    <a href="#" class="button" onclick="showDetail('detail-wayang')">Lihat Detail</a>
+                </div>
+            </div>
+            <div id="detail-wayang" class="detail">
+                <h4>Sejarah dan Deskripsi</h4>
+                <p>Wayang Kulit adalah seni pertunjukan klasik Jawa, menggunakan boneka kulit dari kulit kerbau, cahaya lampu blencong, dan gamelan.</p>
+                <p><strong>Asal:</strong> Jawa Tengah, diakui UNESCO sebagai Warisan Budaya Takbenda.</p>
+            </div>
+        </div>
+
+        <div class="section" id="bali">
+            <h2>Budaya Khas Bali</h2>
+            <div class="culture-item">
+                <img src="https://via.placeholder.com/150x150?text=Tari+Legong+Bali" alt="Tari Legong Bali">
+                <div class="content">
+                    <h3>Tari Legong</h3>
+                    <p>Tarian klasik Bali yang anggun, dimainkan oleh penari muda wanita dengan gerakan halus.</p>
+                    <div class="rating">★★★★☆ (4.2 dari 8 ulasan)</div>
+                    <a href="#" class="button" onclick="showDetail('detail-legong')">Lihat Detail</a>
+                </div>
+            </div>
+            <div id="detail-legong" class="detail">
+                <h4>Sejarah dan Deskripsi</h4>
+                <p>Tari Legong diciptakan abad ke-19, menceritakan kisah cinta dan pertempuran. Kostum tradisional dengan hiasan emas.</p>
+                <p><strong>Asal:</strong> Bali, sering ditampilkan dalam upacara.</p>
+            </div>
+            <div class="culture-item">
+                <img src="https://via.placeholder.com/150x150?text=Upacara+Ngaben+Bali" alt="Upacara Ngaben Bali">
+                <div class="content">
+                    <h3>Upacara Ngaben</h3>
+                    <p>Upacara kremasi jenazah yang merupakan bagian dari ritual Hindu Bali.</p>
+                    <div class="rating">★★★★☆ (4.3 dari 12 ulasan)</div>
+                    <a href="#" class="button" onclick="showDetail('detail-ngaben')">Lihat Detail</a>
+                </div>
+            </div>
+            <div id="detail-ngaben" class="detail">
+                <h4>Sejarah dan Deskripsi</h4>
+                <p>Ngaben adalah upacara pemakaman Hindu Bali, di mana jenazah dikremasi untuk membebaskan roh. Melibatkan prosesi dan musik gamelan.</p>
+                <p><strong>Asal:</strong> Bali, berdasarkan ajaran Hindu.</p>
+            </div>
+        </div>
+
+        <div class="section" id="sumatra">
+            <h2>Budaya Khas Sumatra</h2>
+            <div class="culture-item">
+                <img src="https://via.placeholder.com/150x150?text=Tari+Saman+Sumatra" alt="Tari Saman Sumatra">
+                <div class="content">
+                    <h3>Tari Saman</h3>
+                    <p>Tarian energik Aceh dengan gerakan cepat tangan dan badan, disertai nyanyian.</p>
+                    <div class="rating">★★★★☆ (4.2 dari 9 ulasan)</div>
+                    <a href="#" class="button" onclick="showDetail('detail-saman')">Lihat Detail</a>
+                </div>
+            </div>
+            <div id="detail-saman" class="detail">
+                <h4>Sejarah dan Deskripsi</h4>
+                <p>Tari Saman dari suku Gayo Aceh, digunakan untuk pendidikan dan hiburan. Diakui UNESCO sebagai Warisan Budaya Takbenda.</p>
+                <p><strong>Asal:</strong> Aceh, Sumatra.</p>
+            </div>
+            <div class="culture-item">
+                <img src="https://via.placeholder.com/150x150?text=Rumah+Gadang+Sumatra" alt="Rumah Gadang Sumatra">
+                <div class="content">
+                    <h3>Rumah Gadang</h3>
+                    <p>Rumah tradisional Minangkabau dengan atap melengkung, simbol matrilineal.</p>
+                    <div class="rating">★★★★★ (4.8 dari 20 ulasan)</div>
+                    <a href="#" class="button" onclick="showDetail('detail-gadang')">Lihat Detail</a>
+                </div>
+            </div>
+            <div id="detail-gadang" class="detail">
+                <h4>Sejarah dan Deskripsi</h4>
+                <p>Rumah Gadang adalah arsitektur Minangkabau, atap seperti tanduk kerbau, digunakan sebagai rumah adat dan balai pertemuan.</p>
+                <p><strong>Asal:</strong> Sumatra Barat, mencerminkan budaya matrilineal.</p>
+            </div>
+        </div>
+
+        <div class="section" id="kalimantan">
+            <h2>Budaya Khas Kalimantan</h2>
+            <div class="culture-item">
+                <img src="https://via.placeholder.com/150x150?text=Tari+Kancet+Ledo+Kalimantan" alt="Tari Kancet Ledo Kalimantan">
+                <div class="content">
+                    <h3>Tari Kancet Ledo</h3>
+                    <p>Tarian Dayak dengan gerakan tangan dan kaki lincah, digunakan dalam upacara adat.</p>
+                    <div class="rating">★★★★☆ (4.3 dari 12 ulasan)</div>
+                    <a href="#" class="button" onclick="showDetail('detail-kancet')">Lihat Detail</a>
+                </div>
+            </div>
+            <div id="detail-kancet" class="detail">
+                <h4>Sejarah dan Deskripsi</h4>
+                <p>Tari Kancet Ledo dari suku Dayak, menggambarkan kehidupan sehari-hari. Kostum dari bahan alami.</p>
+                <p><strong>Asal:</strong> Kalimantan, ritual adat.</p>
+            </div>
+            <div class="culture-item">
+                <img src="https://via.placeholder.com/150x150?text=Rumah+Betang+Kalimantan" alt="Rumah Betang Kalimantan">
+                <div class="content">
+                    <h3>Rumah Betang</h3>
+                    <p>Rumah panggung tradisional Dayak yang tinggi, digunakan sebagai tempat tinggal dan pertemuan.</p>
+                    <div class="rating">★★★★☆ (4.4 dari 14 ulasan)</div>
+                    <a href="#" class="button" onclick="showDetail('detail-betang')">Lihat Detail</a>
+                </div>
+            </div>
+            <div id="detail-betang" class="detail">
+                <h4>Sejarah dan Deskripsi</h4>
+                <p>Rumah Betang adalah rumah adat Dayak, dibangun tinggi untuk menghindari banjir dan binatang buas. Atap dari daun rumbia.</p>
+                <p><strong>Asal:</strong> Kalimantan Tengah, simbol kehidupan komunal.</p>
+            </div>
+        </div>
+
+        <div class="section" id="sulawesi">
+            <h2>Budaya Khas Sulawesi</h2>
+            <div class="culture-item">
+                <img src="https://via.placeholder.com/150x150?text=Tari+Pakarena+Sulawesi" alt="Tari Pakarena Sulawesi">
+                <div class="content">
+                    <h3>Tari Pakarena</h3>
+                    <p>Tarian anggun Bugis-Makassar, dimainkan oleh wanita dengan gerakan halus dan kostum megah.</p>
+                    <div class="rating">★★★★☆ (4.4 dari 15 ulasan)</div>
+                    <a href="#" class="button" onclick="showDetail('detail-pakarena')">Lihat Detail</a>
+                </div>
+            </div>
+            <div id="detail-pakarena" class="detail">
+                <h4>Sejarah dan Deskripsi</h4>
+                <p>Tari Pakarena berasal dari kerajaan Bugis, digunakan dalam upacara kerajaan dan pernikahan. Musik pengiring menggunakan alat tradisional.</p>
+                <p><strong>Asal:</strong> Sulawesi Selatan, mencerminkan keanggunan budaya Bugis.</p>
+            </div>
+            <div class="culture-item">
+                <img src="https://via.placeholder.com/150x150?text=Rumah+Tongkonan+Sulawesi" alt="Rumah Tongkonan Sulawesi">
+                <div class="content">
+                    <h3>Rumah Tongkonan</h3>
+                    <p>Rumah adat Toraja dengan atap melengkung, simbol status sosial dan tempat upacara.</p>
+                    <div class="rating">★★★★★ (4.9 dari 18 ulasan)</div>
+                    <a href="#" class="button" onclick="showDetail('detail-tongkonan')">Lihat Detail</a>
+                </div>
+            </div>
+            <div id="detail-tongkonan" class="detail">
+                <h4>Sejarah dan Deskripsi</h4>
+                <p>Rumah Tongkonan adalah rumah adat Toraja, atap seperti perahu terbalik, digunakan untuk ritual dan sebagai pusat kehidupan keluarga.</p>
+                <p><strong>Asal:</strong> Sulawesi Selatan, diakui sebagai warisan budaya.</p>
+            </div>
+        </div>
+
+        <div class="section" id="papua">
+            <h2>Budaya Khas Papua</h2>
+            <div class="culture-item">
+                <img src="https://via.placeholder.com/150x150?text=Tari+Musyoh+Papua" alt="Tari Musyoh Papua">
+                <div class="content">
+                    <h3>Tari Musyoh</h3>
+                    <p>Tarian energik Papua dengan gerakan kaki dan tangan cepat, disertai nyanyian.</p>
+                    <div class="rating">★★★★☆ (3.8 dari 9 ulasan)</div>
+                    <a href="#" class="button" onclick="showDetail('detail-musyoh')">Lihat Detail</a>
+                </div>
+            </div>
+            <div id="detail-musyoh" class="detail">
+                <h4>Sejarah dan Deskripsi</h4>
+                <p>Tari Musyoh dari suku Asmat, digunakan dalam ritual dan perayaan. Kostum terbuat dari bahan alami seperti bulu burung.</p>
+                <p><strong>Asal:</strong> Papua, bagian dari tradisi suku Asmat.</p>
+            </div>
+            <div class="culture-item">
+                <img src="https://via.placeholder.com/150x150?text=Ukiran+Asmat+Papua" alt="Ukiran Asmat Papua">
+                <div class="content">
+                    <h3>Ukiran Asmat</h3>
+                    <p>Seni ukir kayu khas suku Asmat, sering menggambarkan tokoh mitos dan kehid
+                        <div class="rating">★★★★☆ (3.8 dari 9 ulasan)</div>
+                    <a href="#" class="button" onclick="showDetail('detail-musyoh')">Lihat Detail</a>
+                </div>
+            </div>
+            <div id="detail-musyoh" class="detail">
+                <h4>Sejarah dan Deskripsi</h4>
+                <p>Tari Musyoh dari suku Asmat, digunakan dalam ritual dan perayaan. Kostum terbuat dari bahan alami seperti bulu burung.</p>
+                <p><strong>Asal:</strong> Papua, bagian dari tradisi suku Asmat.</p>
+            </div>
